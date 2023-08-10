@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+html, body, div, span, applet, object, iframe, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.thank-card, .rating-card {
+  background-image: linear-gradient(25deg, hsl(216, 12%, 8%), hsl(213, 19%, 18%));
+  max-width: 350px;
+  min-width: 300px;
+  height: 340px;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.rating-card .rating-num button, .rating-card .star {
+  padding: 10px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  background-color: hsl(213, 19%, 18%);
+  margin-bottom: 30px;
+}
+
+.rating-card .rating-text {
+  margin: 20px 0;
+}
+.rating-card .rating-text p {
+  font-size: 15px;
+  color: hsl(217, 12%, 63%);
+  line-height: 25px;
+}
+
+body {
+  font-family: "Overpass", serif;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(216, 12%, 8%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating-card .star img {
+  padding-left: 2px;
+}
+.rating-card .rating-num {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rating-card .rating-num button {
+  padding: 25px;
+  justify-content: center;
+  color: hsl(0, 0%, 100%);
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+}
+.rating-card .rating-num button:hover {
+  background-color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+.rating-card .submit-button {
+  width: 100%;
+}
+.rating-card .submit-button button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+  letter-spacing: 2px;
+}
+.rating-card .submit-button button:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.thank-card {
+  display: none;
+}/*# sourceMappingURL=styles.css.map */

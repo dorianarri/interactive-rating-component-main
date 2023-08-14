@@ -56,7 +56,7 @@ $font-size-para: 15px;
 $font: 'Overpass', serif;
 
 %card-style {
-    background-image: linear-gradient(25deg, $very-dark-blue, $dark-blue);
+    background-image: linear-gradient(10deg, $very-dark-blue, $dark-blue);
     max-width: 350px;
     min-width: 300px;
     height: 340px;
@@ -78,13 +78,10 @@ $font: 'Overpass', serif;
 }
 
 %text-style{
-    margin: 20px 0;
-
-    p{
         font-size: 15px;
         color: $light-grey;
         line-height: 25px;
-    }
+
 }
 
 %button-hover-state{
@@ -106,13 +103,16 @@ body {
 
 .rating-card{
     @extend %card-style;
-
+    display: none;
     .star{
         @extend %circle-container;
 
         img{
             padding-left: 2px;
         }
+    }
+    h1{
+        color: $white;
     }
 
     .rating-text{
@@ -123,6 +123,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-top: 30px;
         button{
             @extend %circle-container;
             padding: 25px;
@@ -135,6 +136,9 @@ body {
         button:hover{
             background-color: $primary-orange;
             cursor: pointer;
+        }
+        button:focus{
+            background-color: $light-grey;
         }
     }
 
@@ -162,5 +166,42 @@ body {
 
 .thank-card{
     @extend %card-style;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    // display: none;
+    .thank-image{
+        margin-top: 40px;
+        height: 40%;
+        width: 50%;
+    }
+    .selected-bubble{
+        background-color: $dark-blue;
+        color: $primary-orange;
+        padding: 10px 20px;
+        border-radius: 20px;
+        margin: 20px 0;
+    }
+    h2{
+        margin-bottom: 10px;
+    }
+    .thank-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        p{
+            @extend %text-style;
+            text-align: center;
+            padding: 5px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.attribution{
     display: none;
 }

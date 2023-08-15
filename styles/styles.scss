@@ -59,7 +59,7 @@ $font: 'Overpass', serif;
     background-image: linear-gradient(10deg, $very-dark-blue, $dark-blue);
     max-width: 350px;
     min-width: 300px;
-    height: 340px;
+    height: 350px;
     margin: 0 auto;
     padding: 25px;
     border-radius: 20px;
@@ -101,12 +101,12 @@ body {
     align-items: center;
 }
 
+
 .rating-card{
     @extend %card-style;
-    display: none;
     .star{
         @extend %circle-container;
-
+        
         img{
             padding-left: 2px;
         }
@@ -114,34 +114,36 @@ body {
     h1{
         color: $white;
     }
-
+    
     .rating-text{
         @extend %text-style;
     }
-
+    
     .rating-num{
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-top: 30px;
-        button{
+        span{
             @extend %circle-container;
-            padding: 25px;
+            padding: 18px;
+            width: 15px;
+            height: 15px;
             justify-content: center;
             color: $white;
             font-size: 15px;
             font-weight: bold;
             border: none;
         }
-        button:hover{
+        span:hover{
             background-color: $primary-orange;
             cursor: pointer;
         }
-        button:focus{
+        span.checked{
             background-color: $light-grey;
         }
     }
-
+    
     .submit-button{
         width: 100%;
         button{
@@ -159,20 +161,21 @@ body {
             background-color: $white;
             cursor: pointer;
         }
-
+        
+        
     }
-
+    
 }
+
 
 .thank-card{
     @extend %card-style;
-    height: 400px;
+    height: 375px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-top: 0;
-    // display: none;
     .thank-image{
         margin-top: 40px;
         height: 40%;
@@ -202,6 +205,13 @@ body {
     }
 }
 
-.attribution{
+.hidden {
     display: none;
+}
+
+.attribution{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem; 
 }

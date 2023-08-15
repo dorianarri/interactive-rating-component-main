@@ -4,8 +4,6 @@ const ratingCard = document.querySelector(".rating-card");
 const thanksCard = document.querySelector(".thank-card");
 const selectedNum = document.querySelector(".selected-num");
 
-
-//  number logic
 let rate = null;
 
 ratingNum.forEach(num => {
